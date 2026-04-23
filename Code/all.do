@@ -4,6 +4,6 @@ keep if inlist(country, "Germany","Belgium", "Bulgaria", "Cyprus", "Croatia", "C
 
 keep if substr(code,-5,.) == "ZCPIN"
 
-append using unemp
+append using ../Data/unemp
 
-save all.dta
+save ../Data/all.dta
