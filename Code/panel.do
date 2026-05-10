@@ -22,7 +22,7 @@ destring CPI, replace ignore("NA")
 gen UGAP = UR - NAWRU
 
 encode country, gen(country_id)
-tsset country_id year // apparently this is fine
+xtset country_id year // apparently this is fine
 
 gen inflation = 100*(log(CPI) - log(L.CPI))
 
